@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
 import { transitions, positions, Provider as AlertProvider } from 'react-alert'
 import AlertTemplate from 'react-alert-template-basic'
 
@@ -31,7 +31,7 @@ const options = {
 
 ReactDOM.render(
   <AlertProvider template={AlertTemplate} {...options}>
-    <BrowserRouter>
+    <HashRouter>
       <Switch>
         {/* add routes with layouts */}
         <Route path="/admin" component={Admin} />
@@ -43,7 +43,7 @@ ReactDOM.render(
         {/* add redirect for first page */}
         <Redirect from="*" to="/auth" />
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   </AlertProvider>,
   document.getElementById("root")
 );
