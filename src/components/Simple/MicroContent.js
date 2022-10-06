@@ -521,7 +521,7 @@ export default function MicroContent(props) {
       .then((response) => {
         // console.log(response)
         //return to main table
-        // window.location.href = "/admin/m/" + props.returnto
+        // window.location.href = "/#/admin/m/" + props.returnto
       }, (error) => {
         // console.log(error);
       });
@@ -534,7 +534,7 @@ export default function MicroContent(props) {
       .then((response) => {
         // console.log(response)
         //return to main table
-        // window.location.href = "/admin/m/" + props.returnto
+        // window.location.href = "/#/admin/m/" + props.returnto
       }, (error) => {
         // console.log(error);
       });
@@ -600,7 +600,7 @@ export default function MicroContent(props) {
         // console.log(response)
         //return to main table
         if(!hasNext){
-          window.location.href = "/admin/m/" + props.returnto
+          window.location.href = "/#/admin/m/" + props.returnto
         }
       }, (error) => {
         // console.log(error);

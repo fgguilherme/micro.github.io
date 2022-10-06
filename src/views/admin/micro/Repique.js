@@ -11,7 +11,7 @@ export default function Repique() {
   // const { from } = location.state
   console.log(location.item)
   if(location.item?.microorg === undefined){
-    window.location.href = "/admin/m/tables"
+    window.location.href = "/#/admin/m/tables"
   }
   const baseurl = window.location.origin.toString() + "/api/"
   return (

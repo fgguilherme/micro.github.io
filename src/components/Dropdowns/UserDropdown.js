@@ -19,7 +19,7 @@ const UserDropdown = () => {
   };
   const user = authService.getCurrentUser();
   if(user == null){
-    window.location.href = "/auth";
+    window.location.href = "/#/auth";
   }
 
   function logout(){

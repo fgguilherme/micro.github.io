@@ -13,7 +13,7 @@ export default function Details() {
   const location = useLocation()
   // const { from } = location.state
   if(location.item?.microorganismo_idmicroorganismo === undefined){
-    window.location.href = "/admin/m/tables"
+    window.location.href = "/#/admin/m/tables"
   }
   const baseurl = window.location.origin.toString() + "/api/"
   const [variedadeContent, setVariedadeContent] = useState({});
