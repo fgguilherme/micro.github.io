@@ -3,6 +3,7 @@
   "version": "1.1.0",
   "description": "Made to control collections of Biology labs at UEA",
   "repository": "",
+  "homepage": "https://fgguilherme.github.io/micro.github.io/",
   "license": "MIT",
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.15.3",
