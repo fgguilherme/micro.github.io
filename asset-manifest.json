@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/micro.github.io/static/css/main.177be597.chunk.css",
-    "main.js": "/micro.github.io/static/js/main.7f434f9f.chunk.js",
-    "main.js.map": "/micro.github.io/static/js/main.7f434f9f.chunk.js.map",
+    "main.js": "/micro.github.io/static/js/main.2590f09a.chunk.js",
+    "main.js.map": "/micro.github.io/static/js/main.2590f09a.chunk.js.map",
     "runtime-main.js": "/micro.github.io/static/js/runtime-main.ba4c9d4b.js",
     "runtime-main.js.map": "/micro.github.io/static/js/runtime-main.ba4c9d4b.js.map",
     "static/css/2.48cd1c22.chunk.css": "/micro.github.io/static/css/2.48cd1c22.chunk.css",
@@ -29,6 +29,6 @@
     "static/css/2.48cd1c22.chunk.css",
     "static/js/2.5c29e470.chunk.js",
     "static/css/main.177be597.chunk.css",
-    "static/js/main.7f434f9f.chunk.js"
+    "static/js/main.2590f09a.chunk.js"
   ]
 }
