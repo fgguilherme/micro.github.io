@@ -9,7 +9,7 @@ import { useAlert } from 'react-alert'
 import config from "config/config.json";
 // components
 const baseurl = config.API_URL
-const baseurlImg = config.API_URL
+const baseurlImg = config.API_IMG
 const customStyles = {
   content: {
     top: "50%",
@@ -522,7 +522,7 @@ export default function MicroContent(props) {
       .then((response) => {
         // console.log(response)
         //return to main table
-        // window.location.href = "/micro.github.io/#/admin/m/" + props.returnto
+        window.location.href = "/micro.github.io/#/admin/m/" + props.returnto
       }, (error) => {
         // console.log(error);
       });
@@ -535,7 +535,7 @@ export default function MicroContent(props) {
       .then((response) => {
         // console.log(response)
         //return to main table
-        // window.location.href = "/micro.github.io/#/admin/m/" + props.returnto
+        window.location.href = "/micro.github.io/#/admin/m/" + props.returnto
       }, (error) => {
         // console.log(error);
       });

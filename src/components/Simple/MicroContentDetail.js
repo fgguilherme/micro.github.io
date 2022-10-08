@@ -3,7 +3,7 @@ import axios from "axios";
 import config from "config/config.json";
 
 const baseurl = config.API_URL
-const baseurlImg = config.API_URL
+const baseurlImg = config.API_IMG
 //0habitat
 const habitatList = [
   {
