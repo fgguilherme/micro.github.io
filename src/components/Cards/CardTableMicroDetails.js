@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import config from "config/config.json";
 // import {CSVDownload, CSVLink} from "react-csv";
 
 
@@ -256,7 +257,7 @@ const doacaoList = [
     doacao: "Sob Consulta",
   },
 ];
-const baseurl = window.location.origin.toString() + "/api/"
+const baseurl = config.API_URL;
 let repiques
 export default function CardTable({ color,microorgid, microorg }) {
   const [tableContent, setTableContent] = useState([]);
@@ -265,6 +266,7 @@ export default function CardTable({ color,microorgid, microorg }) {
   useEffect(() => {
     //0dominio
     if (tableContent.length === 0) {
+      // console.log(baseurl)
       axios.get(baseurl+"repique/search",{
         params: {
           microorganismo_idmicroorganismo: microorgid,
@@ -317,7 +319,7 @@ export default function CardTable({ color,microorgid, microorg }) {
               Exportar
             </button>
             {/* </CSVLink> */}
-            <Link to={{pathname:"/admin/m/repique",item: {microorg: microorg}}}>
+            <Link to={{pathname:"/admin/m/repique",item: {microorg: microorg}}} replace>
               <button
                 className="bg-lightBlue-500 text-white active:bg-lightBlue-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"
                 type="button"
@@ -355,7 +357,7 @@ export default function CardTable({ color,microorgid, microorg }) {
                   return(
                     <tr>
                       <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right">
-                        <Link to={{pathname:"/admin/m/details",item: {microorganismo_idmicroorganismo: repiques[i]}}}>
+                        <Link to={{pathname:"/admin/m/details",item: {microorganismo_idmicroorganismo: repiques[i]}}} replace>
                           <button
                             className="bg-lightBlue-500 text-white active:bg-lightBlue-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"
                             type="button"

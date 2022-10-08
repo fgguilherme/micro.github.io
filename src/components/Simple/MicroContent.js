@@ -522,7 +522,7 @@ export default function MicroContent(props) {
       .then((response) => {
         // console.log(response)
         //return to main table
-        window.location.href = "/micro.github.io/#/admin/m/" + props.returnto
+        window.location.href = "/micro.github.io/"
       }, (error) => {
         // console.log(error);
       });
@@ -535,7 +535,7 @@ export default function MicroContent(props) {
       .then((response) => {
         // console.log(response)
         //return to main table
-        window.location.href = "/micro.github.io/#/admin/m/" + props.returnto
+        window.location.href = "/micro.github.io/"
       }, (error) => {
         // console.log(error);
       });
@@ -546,15 +546,15 @@ export default function MicroContent(props) {
   }
 
   async function saveRepique(e,hasNext){
-    if(grupo_pesquisa?.idgrupo_pesquisa == undefined){
+    if(grupo_pesquisa?.idgrupo_pesquisa === undefined){
       alert.error('Informe o grupo de pesquisa')
       return
     }
-    if(unidade.idunidade == undefined){
+    if(unidade.idunidade === undefined){
       alert.error('Informe o tipo de frasco')
       return
     }
-    if(posicao?.idposicao == undefined){
+    if(posicao?.idposicao === undefined){
       alert.error('Informe a posição')
       return
     }
@@ -562,15 +562,15 @@ export default function MicroContent(props) {
       alert.error('Informe a data do método de preservação.')
       return
     }
-    if(pesqPres?.idpesquisador == undefined){
+    if(pesqPres?.idpesquisador === undefined){
       alert.error('Informe o responsável pela preservação')
       return
     }
-    if(metodo_preservacao.length == 0){
+    if(metodo_preservacao.length === 0){
       alert.error('Informe o método de preservação')
       return
     }
-    if(doacao.iddoacao == undefined){
+    if(doacao.iddoacao === undefined){
       alert.error('Informe a disponibilidade de doação')
       return
     }
@@ -601,13 +601,17 @@ export default function MicroContent(props) {
         // console.log(response)
         //return to main table
         if(!hasNext){
-          window.location.href = "/micro.github.io/#/admin/m/" + props.returnto
+          window.location.href = "/micro.github.io/"
+        }
+        else{
+          alert.success('Repique salvo com sucesso!')
         }
       }, (error) => {
         // console.log(error);
       });
     } catch (error) {
       // console.log("MISSING SOMETHING")
+      alert.error('Erro ao salvar repique')
     }
   }
   // console.log(origCode);
@@ -6043,7 +6047,7 @@ export default function MicroContent(props) {
           </div>
           {props.showOnly === false && props?.isRepique === false ? (
             <div className="text-center flex justify-end">
-              <Link to={"/admin/m/" + props.returnto}>
+              <Link to={"/micro.github.io/"}>
                 <button
                   className="bg-lightBlue-500 text-white active:bg-lightBlue-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"
                   type="button"
@@ -6062,7 +6066,7 @@ export default function MicroContent(props) {
           ) : null}
           {props.showOnly === false && props.isRepique === true ? (
             <div className="text-center flex justify-end">
-              <Link to="/admin/m/details">
+              <Link to={"/micro.github.io/"}>
                 <button
                   className="bg-lightBlue-500 text-white active:bg-lightBlue-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"
                   type="button"
