@@ -10,7 +10,7 @@ export default function EditMicro() {
   console.log(location)
   // const { from } = location.state
   // if(location.item?.microorganismo_idmicroorganismo === undefined){
-  //   window.location.href = "/#/admin/m/tables"
+  //   window.location.href = "/micro.github.io/#/admin/m/tables"
   // }
   return (
     <>

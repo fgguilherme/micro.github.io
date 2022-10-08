@@ -10,14 +10,14 @@ export default function Login() {
 
   const last = AuthService.checkLastLogin()
   if(last?.token){
-    window.location.href = "/#/admin";
+    window.location.href = "/micro.github.io/#/admin";
   }
 
   const auth = () => {
-    console.log(username,passwd,rememberMe)
+    // console.log(username,passwd,rememberMe)
     AuthService.login(username, passwd,rememberMe).then(
       () => {
-        window.location.href = "/#/admin";
+        window.location.href = "/micro.github.io/#/admin";
         // console.log()
       },
       error => {

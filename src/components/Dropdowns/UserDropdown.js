@@ -19,12 +19,12 @@ const UserDropdown = () => {
   };
   const user = authService.getCurrentUser();
   if(user == null){
-    window.location.href = "/#/auth";
+    window.location.href = "/micro.github.io/#/auth";
   }
 
   function logout(){
     authService.logout()
-    window.location.href = "/";
+    window.location.href = "/micro.github.io/";
   }
 
   return (

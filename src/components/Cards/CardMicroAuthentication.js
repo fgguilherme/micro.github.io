@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios, {AxiosError} from "axios";
+import config from "config/config.json";
 
-const baseurl = window.location.origin.toString() + "/api/"
+const baseurl = config.API_URL
 
 
 export default function CardMicroAuth(props) {

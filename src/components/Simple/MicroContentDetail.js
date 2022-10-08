@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import config from "config/config.json";
 
-const baseurl = window.location.origin.toString() + "/api/"
-const baseurlImg = window.location.origin.toString()
+const baseurl = config.API_URL
+const baseurlImg = config.API_URL
 //0habitat
 const habitatList = [
   {

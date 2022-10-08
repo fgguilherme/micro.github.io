@@ -6,14 +6,17 @@ import { useLocation } from 'react-router-dom'
 
 import CardRepique from "components/Cards/CardRepique"
 import CardDetailMicro from "components/Cards/CardDetailMicro";
+
+import config from "config/config.json";
+const baseurl = config.API_URL
+
 export default function Repique() {
   const location = useLocation()
   // const { from } = location.state
   console.log(location.item)
   if(location.item?.microorg === undefined){
-    window.location.href = "/#/admin/m/tables"
+    window.location.href = "/micro.github.io/#/admin/m/tables"
   }
-  const baseurl = window.location.origin.toString() + "/api/"
   return (
     <>
       {/* Card stats */}

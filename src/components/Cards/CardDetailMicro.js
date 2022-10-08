@@ -4,8 +4,9 @@ import Modal from "react-modal";
 import { Link } from "react-router-dom";
 import axios, {AxiosError} from "axios";
 import Select from "react-select";
+import config from "config/config.json";
 // components
-const baseurl = window.location.origin.toString() + "/api/"
+const baseurl = config.API_URL
 
 const customStyles = {
   content: {
@@ -60,7 +61,7 @@ export default function CardDetailMicro(props) {
       .then((response) => {
         // console.log(response)
         //return to main table
-        // window.location.href = "/admin/m/" + props.returnto
+        // window.location.href = "/micro.github.io/#/admin/m/" + props.returnto
       }, (error) => {
         // console.log(error);
       });
@@ -116,7 +117,7 @@ export default function CardDetailMicro(props) {
       .then((response) => {
         // console.log(response)
         //return to main table
-        // window.location.href = "/admin/m/" + props.returnto
+        // window.location.href = "/micro.github.io/#/admin/m/" + props.returnto
       }, (error) => {
         // console.log(error);
       });

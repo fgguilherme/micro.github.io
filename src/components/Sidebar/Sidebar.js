@@ -10,7 +10,7 @@ export default function Sidebar() {
   const [collapseShow, setCollapseShow] = React.useState("hidden");
   const user = authService.getCurrentUser();
   if(user == null){
-    window.location.href = "/#/auth";
+    window.location.href = "/micro.github.io/#/auth";
   }
   return (
     <>
@@ -93,7 +93,7 @@ export default function Sidebar() {
                 <Link
                   className={
                     "text-xs uppercase py-3 font-bold block " +
-                    (window.location.href.indexOf("/#/admin/m/dashboard") !== -1
+                    (window.location.href.indexOf("/micro.github.io/#/admin/m/dashboard") !== -1
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
@@ -102,7 +102,7 @@ export default function Sidebar() {
                   <i
                     className={
                       "fas fa-tv mr-2 text-sm " +
-                      (window.location.href.indexOf("/#/admin/m/dashboard") !== -1
+                      (window.location.href.indexOf("/micro.github.io/#/admin/m/dashboard") !== -1
                         ? "opacity-75"
                         : "text-blueGray-300")
                     }
@@ -115,7 +115,7 @@ export default function Sidebar() {
                 <Link
                   className={
                     "text-xs uppercase py-3 font-bold block " +
-                    (window.location.href.indexOf("/#/admin/m/tables") !== -1
+                    (window.location.href.indexOf("/micro.github.io/#/admin/m/tables") !== -1
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
@@ -124,7 +124,7 @@ export default function Sidebar() {
                   <i
                     className={
                       "fas fa-table mr-2 text-sm " +
-                      (window.location.href.indexOf("/#/admin/m/tables") !== -1
+                      (window.location.href.indexOf("/micro.github.io/#/admin/m/tables") !== -1
                         ? "opacity-75"
                         : "text-blueGray-300")
                     }
@@ -137,7 +137,7 @@ export default function Sidebar() {
                 <Link
                   className={
                     "text-xs uppercase py-3 font-bold block " +
-                    (window.location.href.indexOf("/#/admin/m/settings") !== -1
+                    (window.location.href.indexOf("/micro.github.io/#/admin/m/settings") !== -1
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
@@ -146,7 +146,7 @@ export default function Sidebar() {
                   <i
                     className={
                       "fas fa-tools mr-2 text-sm " +
-                      (window.location.href.indexOf("/#/admin/m/settings") !== -1
+                      (window.location.href.indexOf("/micro.github.io/#/admin/m/settings") !== -1
                         ? "opacity-75"
                         : "text-blueGray-300")
                     }
@@ -172,7 +172,7 @@ export default function Sidebar() {
                 <Link
                   className={
                     "text-xs uppercase py-3 font-bold block " +
-                    (window.location.href.indexOf("/#/admin/users") !== -1
+                    (window.location.href.indexOf("/micro.github.io/#/admin/users") !== -1
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
@@ -181,7 +181,7 @@ export default function Sidebar() {
                   <i
                     className={
                       "fas fa-user mr-2 text-sm " +
-                      (window.location.href.indexOf("/#/admin/users") !== -1
+                      (window.location.href.indexOf("/micro.github.io/#/admin/users") !== -1
                         ? "opacity-75"
                         : "text-blueGray-300")
                     }
